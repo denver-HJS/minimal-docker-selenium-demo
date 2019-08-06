@@ -1,0 +1,21 @@
+{
+  "name": "selenium-chrome-driver-demo",
+  "version": "1.0.0",
+  "description": "A demonstration of executing browser automation via Selenium and Docker",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "SELENIUM_PROMISE_MANAGER=0 node dist/selenium-initializer.js",
+    "compose:up": "docker-compose -f docker-compose.yml up --build --abort-on-container-exit",
+    "webdriver:update": "webdriver-manager update; cd node_modules/.bin; unlink chromedriver; ln -sf ../webdriver-manager/selenium/chromedriver_*[0-9] chromedriver; unlink geckodriver; ln -s ../webdriver-manager/selenium/geckodriver-*[0-9] geckodriver"
+  },
+  "author": "Denver B.",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.14.14",
+    "@types/selenium-webdriver": "^4.0.1",
+    "selenium-webdriver": "^4.0.0-alpha.4",
+    "typescript": "^3.5.3",
+    "webdriver-manager": "^12.1.6"
+  }
+}
