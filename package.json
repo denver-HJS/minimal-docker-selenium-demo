@@ -13,9 +13,9 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "10.17.54",
-    "@types/selenium-webdriver": "^4.0.1",
-    "selenium-webdriver": "^4.0.0-alpha.4",
-    "typescript": "^3.5.3",
-    "webdriver-manager": "^12.1.6"
+    "@types/selenium-webdriver": "4.0.1",
+    "selenium-webdriver": "4.0.0-alpha.4",
+    "typescript": "3.5.3",
+    "webdriver-manager": "12.1.6"
   }
 }
