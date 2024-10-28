@@ -1,4 +1,4 @@
-FROM node:10.24.0-slim AS build
+FROM node:20.18.0-slim AS build
 
 ## install chrome + required tools
 RUN echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list && \
